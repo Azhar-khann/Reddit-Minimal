@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  margin-bottom: 5%;
 }
 
 .Nav {
@@ -9,6 +10,9 @@ body {
   justify-content: flex-start;
   align-content: center;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+  position: sticky;
+  z-index: 1;
+  top:0;
 }
 
 .Nav h2{
@@ -50,9 +54,14 @@ body {
   margin-left: 2%;
 }
 
+
+
+
+
 .Home {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .Post {
@@ -78,6 +87,9 @@ body {
   color: gray;
   margin-bottom: 5px;
   color: #585757;
+}
+.Post #Username {
+  color: rgb(0 186 230);
 }
 
 .Post h2{
@@ -113,14 +125,14 @@ body {
   border: none;
   border-top: 1px solid #cdcdcd;
   margin: 36px 0px;
-  width: 65%;
+  width: 77%;
   margin-bottom: 1px;
 }
 
 .comment-button {
   padding: 10px 16px;
   background-color: #ffffff;
-  color: #8f8d8d;
+  color: #555353;
   border: none;
   font-size: 16px;
   cursor: pointer;
@@ -140,11 +152,13 @@ body {
 }
 
 
+
+
 .Topics {
   display: flex;
   margin-top: 7%;
   margin-right: 10%;
-  width: 15%;
+  width: 17%;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
@@ -152,20 +166,50 @@ body {
   border-radius: 23px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
   height: 0%;
+  position: sticky;
+  bottom:50%; /* adjust the top value to set the desired position */
+  z-index: 1; 
 }
 
 .Topics .Topics-button{
-  padding: 10px 16px;
+  padding: 5px 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
   background-color: #ffffff;
-  color: #2f2f2f;
+  color: #414141;
   border: none;
   font-size: 16px;
   cursor: pointer;
+  font-weight: 100;
 }
+
+.Topics h3{
+  font-weight: 300;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .Topics-button:hover{
   background-color: #f2f2f2;
 }
-
-.Topics-button:active {
-  background-color: #ebebeb;
+.Topics-button:focus, 
+.Topics-button.active {
+  border: none;
+  border-bottom: 1px solid red;
+  margin: 36px 0px;
+  width: 40%;
+  margin-bottom: 10px;
 }
+
+.Topics-button:focus h3,
+.Topics-button.active h3 {
+  color: red; /* adjust the color for the active button text */
+}
+
+
+.Topics .grey-line{
+  margin-top: 2px;
+  
+}
+
+ 
