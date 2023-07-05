@@ -1,4 +1,7 @@
 import React from "react";
+import Comments from "./Comments";
+
+import { Link } from "react-router-dom";
 
 function Post(props) {
 
@@ -8,12 +11,12 @@ function Post(props) {
                 <h4 id = "date">{props.date}</h4>
                 <h2> {props.title}</h2>
                 <img src={props.image}/>
-                <hr class="grey-line"></hr>
-                <div>
+                <div className="section">
+                    <hr className="grey-line"></hr>
                     <h5>{props.points} Points</h5>
-                    <button class="comment-button">
-                        <i class="fas fa-comment"></i> Comments
-                    </button>
+                    <Link to={`/comments/${props.id}`} className="comment-button">
+                        <i className="fas fa-comment"></i> Comments
+                    </Link>
                 </div>
         </div>
     )

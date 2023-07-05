@@ -58,28 +58,104 @@ body {
 
 
 
+
+.main_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+
+
+
+
+
+
+.Sidebar {
+  display: flex;
+  width: 16%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  border-radius: 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+  height: 100%;
+  position: fixed;
+}
+
+.Sidebar .Sidebar-button{
+  padding: 5px 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: #ffffff;
+  color: #414141;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+.Sidebar #Hot_button{
+  margin-top: 80px;
+}
+
+.Sidebar-button h3{
+  font-weight: 300;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Sidebar-button:hover{
+  background-color: #f2f2f2;
+}
+.Sidebar-button:focus, 
+.Sidebar-button.active {
+  border: none;
+  border-bottom: 1px solid red;
+  margin: 36px 0px;
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+.Sidebar-button:focus h3,
+.Sidebar-button.active h3 {
+  color: red; /* adjust the color for the active button text */
+}
+
+.Sidebar .grey-line{
+  margin-top: 2px;
+  
+}
+
+
+
+
+
+
 .Home {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
 }
 
 .Post {
   margin-top: 4%;
   display: flex;
+  flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  flex-direction: column;
-  align-items: flex-start;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
-  width: 37%;
-  /* display: inline-block; */
+  width: 40%;
   margin-left: 19%;
   margin-right: 0;
 }
 
+.Post .section {
+  width:80%
+}
 
 .Post h4{
   font-weight: 100;
@@ -88,6 +164,7 @@ body {
   margin-bottom: 5px;
   color: #585757;
 }
+
 .Post #Username {
   color: rgb(0 186 230);
 }
@@ -109,6 +186,7 @@ body {
   font-weight: 100;
   font-size: 17px;
   color: #5f5d5d;
+  margin-left: 10%;
 
 }
 
@@ -125,9 +203,11 @@ body {
   border: none;
   border-top: 1px solid #cdcdcd;
   margin: 36px 0px;
-  width: 77%;
+  width: 97%;
   margin-bottom: 1px;
 }
+
+
 
 .comment-button {
   padding: 10px 16px;
@@ -136,7 +216,8 @@ body {
   border: none;
   font-size: 16px;
   cursor: pointer;
-  margin-left: 200px;
+  margin-left: 44%;
+  text-decoration: none;
 }
 
 .comment-button i {
@@ -154,62 +235,8 @@ body {
 
 
 
-.Topics {
-  display: flex;
-  margin-top: 7%;
-  margin-right: 10%;
-  width: 17%;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-  justify-content: flex-start;
-  border-radius: 23px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
-  height: 0%;
-  position: sticky;
-  bottom:50%; /* adjust the top value to set the desired position */
-  z-index: 1; 
-}
-
-.Topics .Topics-button{
-  padding: 5px 0px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  background-color: #ffffff;
-  color: #414141;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: 100;
-}
-
-.Topics h3{
-  font-weight: 300;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.Topics-button:hover{
-  background-color: #f2f2f2;
-}
-.Topics-button:focus, 
-.Topics-button.active {
-  border: none;
-  border-bottom: 1px solid red;
-  margin: 36px 0px;
-  width: 40%;
-  margin-bottom: 10px;
-}
-
-.Topics-button:focus h3,
-.Topics-button.active h3 {
-  color: red; /* adjust the color for the active button text */
-}
 
 
-.Topics .grey-line{
-  margin-top: 2px;
-  
-}
+
 
  
