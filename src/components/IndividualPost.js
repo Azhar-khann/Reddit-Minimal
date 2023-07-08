@@ -10,7 +10,8 @@ function Post(props) {
                 <h4 id = "Username"> {props.userName}</h4>
                 <h4 id = "date">{props.date}</h4>
                 <h2> {props.title}</h2>
-                <img src={props.image}/>
+                {props.image !== "" && <img src={props.image} />}
+                {props.video !== "" && <video src={props.video} controls />} 
                 <div className="section">
                     <hr className="grey-line"></hr>
                     <h5>{props.points} Points</h5>

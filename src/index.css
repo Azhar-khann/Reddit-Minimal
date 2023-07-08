@@ -8,7 +8,7 @@ body {
   padding: 0.5%;
   display: flex;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
   position: sticky;
   z-index: 1;
@@ -31,7 +31,7 @@ body {
   font-weight: 100;
   border: 0.8px solid white;
   margin-left: 60%;
-  padding-left: 1%;
+  padding-left: 7%;
   width:13%;
   height:45px;
   margin-top: .5%;
@@ -55,6 +55,14 @@ body {
 }
 
 
+.search-form {
+  width:14%;
+  margin-left: 55%;
+}
+
+.search-form .search{
+  width:90%;
+}
 
 
 
@@ -87,7 +95,7 @@ body {
 .Sidebar .Sidebar-button{
   padding: 5px 0px;
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin-top: 36px;
   background-color: #ffffff;
   color: #414141;
   border: none;
@@ -104,6 +112,8 @@ body {
   font-weight: 300;
   padding-left: 15px;
   padding-right: 15px;
+  font-family: Arial;
+  margin:3px;
 }
 
 .Sidebar-button:hover{
@@ -126,6 +136,11 @@ body {
 .Sidebar .grey-line{
   margin-top: 2px;
   
+}
+
+.Sidebar a {
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -207,8 +222,6 @@ body {
   margin-bottom: 1px;
 }
 
-
-
 .comment-button {
   padding: 10px 16px;
   background-color: #ffffff;
@@ -232,6 +245,41 @@ body {
   background-color: #ebebeb;
 }
 
+
+
+
+
+
+
+.Comments {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.Comments hr{
+  margin-bottom: 10%;
+}
+
+.Comments .comment{
+  display: block;
+  font-size: 16px;
+  font-weight: 100;
+  color: #655e5e;
+  margin-top: 4%;
+  margin-bottom: 6%;
+  margin-left: 8%;
+}
+
+.Comments .image{
+  width:6%;
+  margin-right: 2%;
+}
+
+.Comments .userName{
+  color: rgb(0 186 230);
+}
 
 
 

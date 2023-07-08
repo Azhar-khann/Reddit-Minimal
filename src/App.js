@@ -9,6 +9,7 @@ const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={ <Root/> }>
 
     <Route index element = {<Home/>}/>
+    <Route path="/:postsCategory" element={<Home/>}/>
     <Route path="comments/:id" element={<Comments/>}/>
 
   </Route>
