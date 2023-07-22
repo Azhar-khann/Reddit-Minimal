@@ -1,4 +1,4 @@
-import { Search } from "./api";
+const { Search } = require("./api");
 const { createAsyncThunk, createSlice } =  require("@reduxjs/toolkit");
 
 
