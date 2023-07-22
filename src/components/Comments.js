@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import LoadingComponent from "./Loading";
 
 import { useDispatch, useSelector } from "react-redux";
-import { load, selectdata, isLoadingData } from "../data/homeSlice";
+import {selectdata } from "../data/homeSlice";
 import { selectSearch } from "../data/SearchSlice";
 import {  loadComments,selectComments,isLoadingComments } from '../data/commentsSlice';
 
@@ -12,34 +12,23 @@ function Comments(){
 
     const dispatch = useDispatch();
     const {id} = useParams();
-    const{postsCategory} = useParams();
 
-    const Comments = useSelector(selectComments);
-    const isLoading = useSelector(isLoadingComments);
-    
-    const HomepostList = useSelector(selectdata);
-    const HomeisLoadingpost = useSelector(isLoadingData);
-
-    const searchPostList = useSelector(selectSearch);
-
-    
+    window.history.replaceState({}, document.title, '/');     {/* clear url after getiing id */}
 
     useEffect(() => {
         dispatch(loadComments(id));
 
     }, []); 
 
-    useEffect(() => {  
-        if (HomepostList.length != 25) {
-            dispatch(load(postsCategory));
-        }
+    const Comments = useSelector(selectComments);
+    const isLoading = useSelector(isLoadingComments);
+    
+    const HomepostList = useSelector(selectdata);
 
-    }, []);
-
+    const searchPostList = useSelector(selectSearch);
 
     let post  = HomepostList.find(post => post.hasOwnProperty(id))
-   
-    
+     
     if (post === undefined) {
         post = searchPostList.find(post => post.hasOwnProperty(id))
     }
@@ -47,7 +36,7 @@ function Comments(){
     const { userName, date, title, image, video, url } = post?.[id] || {'userName':'username', 'date':'date', 'title':'title', 'image':'img', 'video':'vid', 'url':'url'};
     
     
-    //window.history.replaceState({}, document.title, '/');
+
  
     
     
@@ -55,8 +44,6 @@ function Comments(){
 
     
         <div className="Comments">
-            
-            {!HomeisLoadingpost && (
 
             <div className="Post"> 
                 <h4 id = "Username"> {userName}</h4>
@@ -93,7 +80,7 @@ function Comments(){
                     }                
                 </div>
             </div>
-            )}
+            
 
         </div>
     )
