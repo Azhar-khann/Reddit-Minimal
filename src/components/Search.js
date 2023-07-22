@@ -28,6 +28,7 @@ function Search() {
     return (
         <form onSubmit={onSearchHandler} className="search-form">
             <input type = "text" className="search" placeholder="Search..." ref={searchInputRef}/>
+            {/* <i className="fas fa-search"></i> */}
         </form>
     )
 }

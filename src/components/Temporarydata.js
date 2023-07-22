@@ -1,3 +1,4 @@
+
 export let postsList = [
     {   
         id: 0,
@@ -60,6 +61,7 @@ const New = [
         date: '12 hours ago',
         title: 'This is where the title of the post goes',
         image:  "https://i.redd.it/q1e00p08ph9b1.png",
+        video: '',
         points: 8800,
         Comments: ['Great','i love it', 'This is just Amazing']
     
@@ -71,6 +73,7 @@ const New = [
         date: '12 hours ago',
         title: 'This is where the title of the post goes',
         image:  "https://i.redd.it/q1e00p08ph9b1.png",
+        video:'',
         points: 8800,
         Comments: ['This is Great','i love it, This is just Amazing']
     
@@ -132,3 +135,4 @@ function data(type){
 }
 
 export default data
+

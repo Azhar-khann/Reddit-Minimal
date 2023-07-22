@@ -1,22 +1,34 @@
-const Comments =  [{
-    userName: 'Bilal',
-    Comment: 'This is great',
-    image: 'https://easydrawingguides.com/wp-content/uploads/2022/03/how-to-draw-an-easy-cartoon-lion-featured-image-1200.png'
-},
 
+const id = '20'
+const id_2= '30'
+const data = [
+    {
+    [id]:{
+        name: 'azhar',
+        last: 'Khan'
+    }
+},  
 {
-    userName: 'Ahmed',
-    Comment: 'I love it',
-    image: 'https://easydrawingguides.com/wp-content/uploads/2022/03/how-to-draw-an-easy-cartoon-lion-featured-image-1200.png'
+    [id_2]:{
+        name: 'ahmaed',
+        last: 'Khan'
+    },
 },
-
 {
-    userName: 'Ahmed',
-    Comment: 'Lol this is so funny!',
-    image: 'https://easydrawingguides.com/wp-content/uploads/2022/03/how-to-draw-an-easy-cartoon-lion-featured-image-1200.png'
-}]
+    [id]:{
+        name: 'rizwan',
+        last: 'Khanjjaja'
+    }
+}
+]
 
-Comments.map(comment => {
-
-    console.log(comment.userName)
+//console.log(data);
+data.map(post =>{
+    const obj = Object.values(post)[0];
+    //console.log(obj)
+    const idValue = Object.keys(post)[0];
+    console.log(idValue);
 })
+
+const objectWithId2 = data.find(obj => obj.hasOwnProperty(id_2));
+console.log(objectWithId2[id]);

@@ -9,7 +9,6 @@ function Sidebar() {
 
     return (
 
-    
         <div className="Sidebar">
             <Link to= {`/`} id="Hot_button" className={`Sidebar-button ${location.pathname === '/' ? 'active' : ''}`}>
                 <h3>Home</h3>
@@ -26,7 +25,8 @@ function Sidebar() {
             <Link to= {`/Top`}  className={`Sidebar-button ${location.pathname === '/Top' ? 'active' : ''}`}>
                 <h3>Top</h3>
             </Link> 
-        </div>
+        </div> 
+
 
     )
 } 
