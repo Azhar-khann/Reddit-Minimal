@@ -1,4 +1,4 @@
-import { Comments } from "./api";
+const { Comments } = require("./api");
 const { createAsyncThunk, createSlice } =  require("@reduxjs/toolkit");
 
 export const loadComments = createAsyncThunk(

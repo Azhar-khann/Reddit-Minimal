@@ -1,4 +1,4 @@
-import { loadData } from "./api";
+const { loadData } = require("./api");
 const { createAsyncThunk, createSlice } =  require("@reduxjs/toolkit");
 
 
