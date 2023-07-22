@@ -123,7 +123,7 @@ async function Search(query){
 //Comments('14ycbs4')
 //Comments('14e8m5n')
 //Search('cake recipes')
-module.exports = {loadData, Comments, Search};
+export { loadData, Comments, Search }
 
 
 
