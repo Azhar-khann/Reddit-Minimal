@@ -1,6 +1,6 @@
 # Reddit Minimal Project
 
-This is a minimal version of Reddit, designed to provide users with a streamlined and visually appealing browsing experience. The project is built using HTML, CSS, JavaScript, React, and Redux, and it offers a range of features for browsing Reddit content and interacting with posts.
+This is a minimal version of Reddit, designed to provide users with a streamlined and visually appealing Reddit experience. The project is built using HTML, CSS, JavaScript, React, and Redux, and it offers a range of features for browsing Reddit content and interacting with posts.
 
 ## Features
 
@@ -33,6 +33,11 @@ We understand the importance of user engagement and participation in online comm
 - React: Used to build the user interface components and manage the application's state efficiently.
 
 - Redux: Provides a centralized store for managing application state and handling data fetching.
+
+
+## Live Site
+
+Check out the live site: [Reddit Minimalist App](https://reddit-minimalist-app.netlify.app/)
 
 ## Getting Started
 
