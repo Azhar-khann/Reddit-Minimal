@@ -569,7 +569,6 @@ body {
 }
 
 
-
 @media screen and (max-width: 1000px) and (min-width:700px) {
 
 
@@ -789,6 +788,9 @@ body {
     font-size: 14px;
   }
 
+  .loading-container{
+    margin-top: 35%;
+  }
 
 }
 
@@ -820,6 +822,10 @@ body {
   }
   .search-form{
     margin-left: 19%;
+  }
+
+  .loading-container{
+    margin-top: 45%;
   }
 
   
