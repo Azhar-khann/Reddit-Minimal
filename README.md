@@ -16,11 +16,6 @@ This is a minimal version of Reddit, designed to provide users with a streamline
 
 - **Top Comments:** The application provides a feature to view the top comments of each post, making it easier to engage with the most popular discussions.
 
-## Future Development
-
-In the future, we plan to enhance the Reddit Minimal app by adding features that allow users to connect their Reddit accounts. This integration will enable users to vote on posts, comment on discussions, and engage with the community directly through the application. By connecting their accounts, users will have a more personalized experience and be able to interact with the content they love on Reddit.
-
-We understand the importance of user engagement and participation in online communities. By implementing account integration, we aim to provide a more immersive and interactive experience for Reddit Minimal users.
 
 ## Technologies Used
 
