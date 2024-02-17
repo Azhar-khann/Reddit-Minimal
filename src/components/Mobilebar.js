@@ -18,7 +18,7 @@ function Mobilebar() {
                 <h3>Popular</h3>
             </Link>
 
-            <Link to= {`/New`}  className={`Mobilebar-button ${location.pathname === '/New' ? 'active' : ''}`}>
+            <Link to= {`/New`} id="Sidebar_button_new" className={`Mobilebar-button ${location.pathname === '/New' ? 'active' : ''}`}>
                 <h3>New</h3>
             </Link>
 

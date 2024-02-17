@@ -27,17 +27,17 @@ body {
   
 }
 
-.Nav input{
+.Nav input {
   background-color: rgb(196, 8, 8);
   font-size: 15px;
-  font-weight: 100;
-  border: 0.8px solid white;
+  border: 1px solid white;
   padding-left: 6%;
-  width:13%;
-  height:45px;
-  border-color: rgb(58, 56, 56);
-  
+  width: 13%;
+  height: 45px;
+  border-color: rgb(0 0 0);
 }
+  
+
 .Nav input::placeholder {
   color: rgb(47, 46, 46);
   
@@ -124,7 +124,6 @@ body {
   margin-top: 80px;
 }
 
-.Sidebar-button h3,
 .Mobilebar h3{
   font-weight: 300;
   padding-left: 15px;
@@ -132,6 +131,21 @@ body {
   font-family: Arial;
   margin:3px;
 }
+
+
+.Sidebar-button h3{
+  font-weight: 300;
+  font-family: Arial;
+  margin:3px;
+  padding-left: 8px;
+}
+
+
+/* disbale new */
+#Sidebar_button_new{
+  display: none;
+}
+
 
 .Sidebar-button:hover,
 .Mobilebar-button:hover{
